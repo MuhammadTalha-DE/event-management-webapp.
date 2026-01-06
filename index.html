@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="functionnality.js"></script>
+    
+    
+    <!-- Placeholder for CSS link if you want to separate it later -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Event Horizon</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Section to Add a New Event -->
+        <section id="add-event-section">
+            <h2>Add New Event</h2>
+            <form id="event-form">
+                <div class="form-group">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" placeholder="Enter event name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-desc">Event Description:</label>
+                    <textarea id="event-desc" rows="4" placeholder="Enter event details..." required></textarea>
+                </div>
+
+                <button type="submit" id="add-btn">Add Event</button>
+            </form>
+        </section>
+
+        <!-- Section to Display List of Events -->
+        <section id="event-list-section">
+            <h2>Upcoming Events</h2>
+            <div id="events-container">
+                <!-- Events will be injected here dynamically by JavaScript -->
+                <p id="no-events-msg">No events available. Add one above!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        
+        <p>&copy; <span id="year"></span> | Developed by [Data Engr Muhammad Talha]</p>
+        <p> Contact with me by TalhadataEngr@outlook.com</p><br>
+    </footer>
+
+ 
+</body>
+</html>
