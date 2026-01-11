@@ -3,63 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Horizon</title>
+    <title>Event Horizon - Event Management</title>
     <link rel="stylesheet" href="style.css">
-    <script src="functionnality.js"></script>
-    
-    
-    <!-- Placeholder for CSS link if you want to separate it later -->
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
-        <h1>Event Horizon</h1>
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-calendar-alt"></i>
+                <h1>Event Horizon</h1>
+            </div>
+            <p class="tagline">Managing Memorable Moments</p>
+        </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Section to Add a New Event -->
-        <section id="add-event-section">
-            <h2>Add New Event</h2>
-            <form id="event-form">
-                <div class="form-group">
-                    <label for="event-name">Event Name:</label>
-                    <input type="text" id="event-name" placeholder="Enter event name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="event-date">Event Date:</label>
-                    <input type="date" id="event-date" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="event-desc">Event Description:</label>
-                    <textarea id="event-desc" rows="4" placeholder="Enter event details..." required></textarea>
-                </div>
-
-                <button type="submit" id="add-btn">Add Event</button>
-            </form>
+    <main class="container">
+        <!-- Search Bar -->
+        <section class="search-section">
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Search events by name or date...">
+                <button id="clearSearch">Clear</button>
+            </div>
+            <div class="event-count">
+                <span id="eventCount">0</span> events found
+            </div>
         </section>
 
-        <!-- Section to Display List of Events -->
-        <section id="event-list-section">
-            <h2>Upcoming Events</h2>
-            <div id="events-container">
-                <!-- Events will be injected here dynamically by JavaScript -->
-                <p id="no-events-msg">No events available. Add one above!</p>
+        <!-- Event Display Section -->
+        <section class="events-section">
+            <h2><i class="fas fa-list-alt"></i> Upcoming Events</h2>
+            <div class="events-container" id="eventsContainer">
+                <!-- Events will be dynamically inserted here -->
+                <div class="no-events" id="noEventsMessage">
+                    <i class="fas fa-calendar-plus"></i>
+                    <p>No events found. Add your first event below!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add Event Form Section -->
+        <section class="form-section">
+            <h2><i class="fas fa-plus-circle"></i> Add New Event</h2>
+            <div class="form-container">
+                <form id="eventForm">
+                    <div class="form-group">
+                        <label for="eventName"><i class="fas fa-tag"></i> Event Name</label>
+                        <input type="text" id="eventName" placeholder="Enter event name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDate"><i class="fas fa-calendar-day"></i> Event Date</label>
+                        <input type="date" id="eventDate" required>
+                        <div class="error-message" id="dateError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="eventDescription"><i class="fas fa-align-left"></i> Event Description</label>
+                        <textarea id="eventDescription" rows="4" placeholder="Describe your event..." required></textarea>
+                        <div class="error-message" id="descError"></div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-plus"></i> Add Event
+                        </button>
+                        <button type="button" class="btn-reset" id="resetBtn">
+                            <i class="fas fa-redo"></i> Reset Form
+                        </button>
+                    </div>
+                </form>
+                
+                <div class="form-info">
+                    <h3><i class="fas fa-info-circle"></i> Quick Tips</h3>
+                    <ul>
+                        <li>All fields are required to add an event</li>
+                        <li>Events are automatically sorted by date</li>
+                        <li>Past events will be highlighted in gray</li>
+                        <li>Use the search bar to filter events</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
     <footer>
-        
-        <p>&copy; <span id="year"></span> | Developed by [Data Engr Muhammad Talha]</p>
-        <p> Contact with me by TalhadataEngr@outlook.com</p><br>
+        <div class="container">
+            <div class="footer-content">
+                <p>Developed by <span class="developer-name">Data_Engr M Talha</span></p>
+                <p>&copy; <span id="currentYear"></span> Event Horizon. All rights reserved @2026.</p>
+                <div class="footer-icons">
+                    <a href="#"><i class="https://github.com/MuhammadTalha-DE"></i></a>
+                    <a href="#"><i class=""></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
     </footer>
 
- 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
