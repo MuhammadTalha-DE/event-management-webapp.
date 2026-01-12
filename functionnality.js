@@ -3,34 +3,291 @@ let events = [
     {
         id: 1,
         name: "Tech Conference 2023",
-        date: "2023-12-15",
+        date: "2027-12-15",
         description: "Annual technology conference with industry leaders and workshops on emerging technologies."
     },
     {
         id: 2,
         name: "Music Festival",
-        date: "2023-11-20",
+        date: "2027-11-20",
         description: "A weekend of live music featuring popular artists across multiple genres."
     },
     {
         id: 3,
         name: "Charity Gala",
-        date: "2023-10-30",
+        date: "2027-10-30",
         description: "Formal fundraising event to support local community initiatives."
     },
     {
         id: 4,
         name: "Startup Pitch Competition",
-        date: "2024-01-25",
+        date: "2027-01-25",
         description: "Entrepreneurs pitch their business ideas to a panel of investors."
     },
     {
         id: 5,
         name: "Art Exhibition Opening",
-        date: "2024-02-10",
+        date: "2027-02-10",
         description: "Opening night for a new contemporary art exhibition featuring local artists."
+    },
+
+
+
+    {
+        id: 21,
+        name: "AI Ethics and Future Forum",
+        date: "2027-03-20",
+        description: "Discussion on ethical AI development and implementation."
+    },
+    {
+        id: 22,
+        name: "Blockchain Technology Seminar",
+        date: "2027-03-27",
+        description: "Understanding cryptocurrency and blockchain applications."
+    },
+    {
+        id: 23,
+        name: "Cybersecurity Awareness Workshop",
+        date: "2027-04-03",
+        description: "Learn to protect your digital identity and data."
+    },
+    {
+        id: 24,
+        name: "Web Development Bootcamp",
+        date: "2027-04-10",
+        description: "Hands-on training in modern web development technologies."
+    },
+    {
+        id: 25,
+        name: "IoT Smart Home Expo",
+        date: "2027-04-17",
+        description: "Exhibition of latest smart home devices and automation."
+    },
+    {
+        id: 26,
+        name: "Data Science Conference",
+        date: "2027-04-24",
+        description: "Big data analytics and machine learning applications."
+    },
+    {
+        id: 27,
+        name: "5G Technology Forum",
+        date: "2027-05-01",
+        description: "Exploring the impact of 5G on communication and industries."
+    },
+    {
+        id: 28,
+        name: "Virtual Reality Gaming Tournament",
+        date: "2027-05-08",
+        description: "Competitive VR gaming with latest equipment demonstrations."
+    },
+    {
+        id: 29,
+        name: "Quantum Computing Introduction",
+        date: "2027-05-15",
+        description: "Basic concepts and future potential of quantum computing."
+    },
+    {
+        id: 30,
+        name: "Tech Startup Pitch Competition",
+        date: "2027-05-22",
+        description: "Emerging tech companies present innovative solutions."
+    },
+
+
+    {
+        id: 11,
+        name: "Community Clean-up Day",
+        date: "2027-03-18",
+        description: "Volunteer to clean local parks and public spaces."
+    },
+    {
+        id: 12,
+        name: "Blood Donation Drive",
+        date: "2027-03-25",
+        description: "Join us to donate blood and save lives in our community."
+    },
+    {
+        id: 13,
+        name: "Food Bank Volunteering",
+        date: "2027-04-01",
+        description: "Help sort and distribute food to families in need."
+    },
+    {
+        id: 14,
+        name: "Environmental Conservation Workshop",
+        date: "2027-04-08",
+        description: "Learn about sustainability and conservation practices."
+    },
+    {
+        id: 15,
+        name: "Literacy Tutoring Program",
+        date: "2027-04-15",
+        description: "Volunteer to teach reading skills to adults."
+    },
+    {
+        id: 16,
+        name: "Disaster Preparedness Training",
+        date: "2027-04-22",
+        description: "Learn emergency response and first aid skills."
+    },
+    {
+        id: 17,
+        name: "Senior Citizens Tech Help Day",
+        date: "2027-04-29",
+        description: "Help elderly community members with technology basics."
+    },
+    {
+        id: 18,
+        name: "Cultural Diversity Festival",
+        date: "2027-05-06",
+        description: "Celebrate different cultures through food, music, and art."
+    },
+    {
+        id: 19,
+        name: "Animal Shelter Support Event",
+        date: "2027-05-13",
+        description: "Volunteer day at the local animal shelter."
+    },
+    {
+        id: 20,
+        name: "Community Garden Planting",
+        date: "2026-05-20",
+        description: "Help plant and maintain the neighborhood community garden."
+    },
+
+
+    {
+        id: 1,
+        name: "Mindfulness Meditation Workshop",
+        date: "2026-03-15",
+        description: "Learn meditation techniques for stress reduction and mental clarity."
+    },
+    {
+        id: 2,
+        name: "Public Speaking Masterclass",
+        date: "2026-03-22",
+        description: "Build confidence and communication skills for effective presentations."
+    },
+    {
+        id: 3,
+        name: "Time Management Seminar",
+        date: "2026-03-29",
+        description: "Strategies for productivity and work-life balance."
+    },
+    {
+        id: 4,
+        name: "Emotional Intelligence Training",
+        date: "2026-04-05",
+        description: "Develop self-awareness and interpersonal skills."
+    },
+    {
+        id: 5,
+        name: "Leadership Development Program",
+        date: "2026-04-12",
+        description: "Cultivate leadership qualities and team management skills."
+    },
+    {
+        id: 6,
+        name: "Creative Writing Workshop",
+        date: "2026-04-19",
+        description: "Unlock your creative potential through writing exercises."
+    },
+    {
+        id: 7,
+        name: "Financial Literacy Course",
+        date: "2026-04-26",
+        description: "Learn budgeting, investing, and financial planning basics."
+    },
+    {
+        id: 8,
+        name: "Yoga and Wellness Retreat",
+        date: "2026-05-03",
+        description: "Weekend retreat focusing on physical and mental wellbeing."
+    },
+    {
+        id: 9,
+        name: "Career Advancement Strategies",
+        date: "2026-05-10",
+        description: "Networking and skill-building for professional growth."
+    },
+    {
+        id: 10,
+        name: "Digital Detox Challenge",
+        date: "2026-05-17",
+        description: "Learn to balance technology use for better mental health."
+    },
+
+
+    {
+        id: 31,
+        name: "Global Youth Leadership Summit",
+        date: "2026-03-16",
+        description: "Young leaders discuss global challenges and solutions."
+    },
+    {
+        id: 32,
+        name: "International Cultural Exchange Fair",
+        date: "2026-03-23",
+        description: "Promoting cross-cultural understanding through arts."
+    },
+    {
+        id: 33,
+        name: "Climate Change Diplomacy Forum",
+        date: "2026-03-30",
+        description: "Discussion on international climate agreements and policies."
+    },
+    {
+        id: 34,
+        name: "Human Rights Symposium",
+        date: "2026-04-06",
+        description: "Addressing global human rights challenges and advocacy."
+    },
+    {
+        id: 35,
+        name: "United Nations SDG Conference",
+        date: "2026-04-13",
+        description: "Progress on Sustainable Development Goals implementation."
+    },
+    {
+        id: 36,
+        name: "International Trade Workshop",
+        date: "2026-04-20",
+        description: "Understanding global trade agreements and economics."
+    },
+    {
+        id: 37,
+        name: "Refugee Support Initiative Meeting",
+        date: "2026-04-27",
+        description: "Coordinating international aid for refugee communities."
+    },
+    {
+        id: 38,
+        name: "Global Health Partnerships Summit",
+        date: "2026-05-04",
+        description: "Collaboration for international healthcare improvements."
+    },
+    {
+        id: 39,
+        name: "Digital Divide Bridging Conference",
+        date: "2026-05-11",
+        description: "Addressing technology access inequality worldwide."
+    },
+    {
+        id: 40,
+        name: "Peacebuilding and Conflict Resolution",
+        date: "2027-05-18",
+        description: "Diplomatic approaches to international conflict prevention."
     }
 ];
+/*
+const allEvents = [
+    ...personalDevelopmentEvents,
+    ...socialResponsibilityEvents,
+    ...technologyEvents,
+    ...internationalEvents
+];
+    */
 
 // DOM Elements
 const eventsContainer = document.getElementById('eventsContainer');
@@ -310,16 +567,16 @@ function showNotification(message, type) {
                 transform: translateX(0);
             }
             .notification.success {
-                border-left: 5px solid #26d0ce;
+                border-left: 5px solid #ea8b0e;
             }
             .notification.info {
-                border-left: 5px solid #3498db;
+                border-left: 5px solid #6708e3;
             }
             .notification i {
                 font-size: 1.5rem;
             }
             .notification.success i {
-                color: #26d0ce;
+                color: rgb(19, 248, 84);
             }
             .notification.info i {
                 color: #3498db;
@@ -327,7 +584,7 @@ function showNotification(message, type) {
             .notification-close {
                 background: none;
                 border: none;
-                color: #6c757d;
+                color: #108ffe;
                 cursor: pointer;
                 margin-left: auto;
                 font-size: 1.2rem;
